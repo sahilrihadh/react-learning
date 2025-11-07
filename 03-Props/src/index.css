@@ -1,0 +1,31 @@
+*{
+  margin: auto;
+}
+.card{
+  width: 300px;
+  background-color: grey;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.card img{
+  max-width: 100%;
+  height: auto;
+}
+.card h4{
+  font-size: 24px;
+}
+.card p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btn{
+  color: #fff;
+  font-size: 16px;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 10px 20px;
+  outline: none;
+}
