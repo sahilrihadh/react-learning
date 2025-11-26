@@ -1,0 +1,29 @@
+body{
+  color: #fff;
+}
+.parent {
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card{
+  color: #111;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+.top img{
+  max-width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #eee;
+}
+.center{}
