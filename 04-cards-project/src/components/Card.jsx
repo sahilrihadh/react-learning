@@ -1,12 +1,12 @@
 import React from 'react'
 import { Bookmark } from 'lucide-react'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card">
       <div className="top">
         <img 
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQZwfIF1UdjlMBtjg4fmlfdGU0suXMgG5qA&s" 
+          src={props.logo} 
           alt="company-logo" 
         />
         <button>

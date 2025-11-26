@@ -111,8 +111,10 @@ function App() {
 
   return (
     <div className="parent">
-      {jobs.map(function(elem){
-        return <Card  />
+      {jobs.map(function(elem, idx){
+        return <div key={idx}>
+          <Card  logo={elem.brandLogo} />
+        </div>
       })}
       
     </div>
