@@ -7,7 +7,7 @@ function App() {
 
   const jobs = [
   {
-    brandLogo: "https://logo.clearbit.com/google.com",
+    brandLogo: "https://cdn.vectorstock.com/i/1000v/48/30/google-logo-symbol-vector-46334830.jpg",
     company: "Google",
     datePosted: "3 days ago",
     post: "Frontend Engineer",
@@ -17,7 +17,7 @@ function App() {
     location: "Mountain View, USA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/amazon.com",
+    brandLogo: "https://static.cdnlogo.com/logos/a/86/amazon-icon_800.png",
     company: "Amazon",
     datePosted: "1 week ago",
     post: "UI/UX Designer",
@@ -27,7 +27,7 @@ function App() {
     location: "Mumbai, India"
   },
   {
-    brandLogo: "https://logo.clearbit.com/meta.com",
+    brandLogo: "https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png",
     company: "Meta",
     datePosted: "5 days ago",
     post: "Product Designer",
@@ -37,7 +37,7 @@ function App() {
     location: "Austin, USA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/apple.com",
+    brandLogo: "https://cdn-icons-png.flaticon.com/512/721/721335.png",
     company: "Apple",
     datePosted: "10 weeks ago",
     post: "iOS Developer",
@@ -47,7 +47,7 @@ function App() {
     location: "Cupertino, USA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/netflix.com",
+    brandLogo: "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png",
     company: "Netflix",
     datePosted: "2 days ago",
     post: "Backend Engineer",
@@ -57,7 +57,7 @@ function App() {
     location: "Los Gatos, USA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/microsoft.com",
+    brandLogo: "https://static.vecteezy.com/system/resources/previews/027/127/473/non_2x/microsoft-logo-microsoft-icon-transparent-free-png.png",
     company: "Microsoft",
     datePosted: "7 days ago",
     post: "Cloud Architect",
@@ -67,7 +67,7 @@ function App() {
     location: "Seattle, USA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/tesla.com",
+    brandLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/500px-Tesla_logo.png",
     company: "Tesla",
     datePosted: "4 days ago",
     post: "Full Stack Developer",
@@ -77,7 +77,7 @@ function App() {
     location: "Berlin, Germany"
   },
   {
-    brandLogo: "https://logo.clearbit.com/nvidia.com",
+    brandLogo: "https://image.similarpng.com/file/similarpng/original-picture/2020/06/Logo-nvidia-transparent-PNG.png",
     company: "NVIDIA",
     datePosted: "8 weeks ago",
     post: "AI Research Engineer",
@@ -87,7 +87,7 @@ function App() {
     location: "Santa Clara, USA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/openai.com",
+    brandLogo: "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/openai-new-logo_f252fc.png",
     company: "OpenAI",
     datePosted: "6 days ago",
     post: "Machine Learning Engineer",
@@ -97,7 +97,7 @@ function App() {
     location: "San Francisco, USA"
   },
   {
-    brandLogo: "https://logo.clearbit.com/adobe.com",
+    brandLogo: "https://1000logos.net/wp-content/uploads/2016/10/Adobe-Logo-1993.jpg  ",
     company: "Adobe",
     datePosted: "3 weeks ago",
     post: "Visual Designer",
@@ -111,13 +111,11 @@ function App() {
 
   return (
     <div className="parent">
-      {jobs.map(function(elem, idx){
-        return <div key={idx}>
-          <Card  logo={elem.brandLogo} />
-        </div>
-      })}
-      
-    </div>
+  {jobs.map((job, idx) => (
+    <Card key={idx} job={job} />
+  ))}
+</div>
+
   )
 }
 
